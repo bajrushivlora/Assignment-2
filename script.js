@@ -19,7 +19,7 @@ var move = [5, 10, 15, 20];
 var randomMove = move[Math.floor(Math.random()*move.length)];
 
 
-for (var i = 0; i < 900; i++) {
+for (var i = 0; i < 800; i++) {
     var shapes = document.createElement('div');
     shapes.classList.add('shapeone');
     shapes.style = `transform: translateX(${randomMove}px);"`
@@ -53,5 +53,5 @@ var outputString = function(location, string){
     appendToX(location, string);
 }
 
-setInterval(outputString, 250, "content", `<div> class="shapetwo" </div>`);
+setInterval(outputString, 300, "content", `<div> class="shapetwo" </div>`);
 
