@@ -14,12 +14,12 @@ function randomNumber (min, max) {
 // ------------------------------------------------------------------------------------------------------------------------------------
 
 
-var content = document.querySelector('.content');
+var content = document.getElementById('content');
 var move = [5, 10, 15, 20];
 var randomMove = move[Math.floor(Math.random()*move.length)];
 
 
-for (var i = 0; i < 100; i++) {
+for (var i = 0; i < 900; i++) {
     var shapes = document.createElement('div');
     shapes.classList.add('shapeone');
     shapes.style = `transform: translateX(${randomMove}px);"`
@@ -44,3 +44,14 @@ circles.forEach(function(shape, i) {
     shape.style.width = randomWidth + 'px';
     shape.style.height = randomHeight + 'px';
 });
+
+var appendToX = function(content, output){
+    document.getElementById(content).insertAdjacentHTML('beforeEnd', output);
+}
+
+var outputString = function(location, string){
+    appendToX(location, string);
+}
+
+setInterval(outputString, 250, "content", `<div> class="shapetwo" </div>`);
+

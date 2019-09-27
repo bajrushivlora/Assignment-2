@@ -13,7 +13,7 @@ body {
     background-color: black;
 }
 
-.content {
+#content {
     display: flex;
     align-items: center;
     height: 100vh;
@@ -24,4 +24,13 @@ body {
     height: 130px;
     border-radius: 100%;
     margin: 0 auto;
+    /* animation-name: pulse; */
 }
+
+.shapetwoattributes { 
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    background-color: red;
+}
+
