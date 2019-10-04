@@ -24,13 +24,8 @@ body {
     height: 130px;
     border-radius: 100%;
     margin: 0 auto;
-    /* animation-name: pulse; */
 }
 
-.shapetwoattributes { 
-    width: 130px;
-    height: 130px;
-    margin: 0 auto;
-    background-color: red;
+.shape-interaction {
+    transform: rotate(45deg);
 }
-
